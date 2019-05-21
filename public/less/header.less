@@ -2,13 +2,14 @@
     background-image: url('../assets/background.jpg');
     height:800px;
     //background-color: @background-color;
-    background-size:100vw 600px;
+    background-size:cover;
     background-repeat:no-repeat;
     width: 100%;
-    .flex(space-between , stretch ,column);
+    .flex(flex-start , stretch ,column);
     .topbar{
         .flex(space-between, stretch, row);
         height:12%;
+        background-color:@primary-color;
         .logo{
             .flex(space-between , stretch ,row);
             padding-left:2em;
@@ -18,6 +19,12 @@
            .flex(space-evenly, center, row);
             width:60%;
        }
+    }
+    .tagline{
+        .flex(flex-start, center, row );
+        padding-left:5%;
+        height:100%;
+        width:35%;
     }
     
 
