@@ -1,9 +1,9 @@
 class Books {
   constructor(element) {
     this.element = element;
-    this.pictures =
+    this.pictures;
   }
 }
 
-let book = document.querySelectorAll('books')
+const book = document.querySelectorAll('books');
 const singleBook = new Books();
