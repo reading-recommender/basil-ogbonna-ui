@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Reading Recommender - You read, we recommend!</title>
 	<link rel="stylesheet" type="text/css" href="./css/index.css" />
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="./css/animate.css" />
 	<script src="./components/Teams/teams.js" async></script>
 
@@ -13,108 +14,107 @@
 
 <body>
 	<div class='home-container'>
-		<header class='header wow fadeIn'>
+		<header class='header fade-in'>
 			<div class='topbar wow slideInDown'>
 				<div class='logo'>
-					<a  class='wow fadeInDown' href='index.html'><img src='./assets/logo.png' alt='' /></a>
+					<a class='wow fadeInDown' href='index.html'><img src='./assets/logo.png' alt='' /></a>
 					<h1 class='wow fadeInDown'>Reading <br> Recommender</h1>
 				</div>
 				<nav class='navbar'>
 					<a class='navlink wow fadeInDown' href='index.html'>Home</a>
 					<a class='navlink wow fadeInDown' href='about.html'>About</a>
-					<a class='navlink wow fadeInDown' href='#contact'>Contact Us</a>
-					<a class='navlink wow fadeInDown' href='' id='signup'>Create an Account</a>
+					<a class='navlink wow fadeInDown' href='' id='signup'>Sign Up</a>
 					<a class='navlink wow fadeInDown' href='' id='login'>Login</a>
 				</nav>
 			</div>
-			<div class='tag-section'>  
-					<div class='tagline'>
-							<div class='wow slideInLeft'>
-								<h1> We Simplify Your Book Selection Process!</h1>
-								<h3>Reading books that interests you is easy. Take the quiz and lets get you reading...</h3>
-							</div>
-						</div>
-						<div class='call'>
-								<button class='wow flash' > Take Quiz</button>
-						</div>
+			<div class='tag-section'>
+				<div class='tagline'>
+					<div class='wow slideInLeft'>
+						<h1> We Simplify Your Book Selection Process!</h1>
+						<h3>Reading books that interests you is easy. Take the quiz and lets get you reading...</h3>
+					</div>
+				</div>
+				<div class='call'>
+					<button class='wow flash'> Take Quiz</button>
+				</div>
 			</div>
 		</header>
 		<section class='books'>
 			<div class='heading'>
-				<h2>Featured Books</h2>
+				<h2 data-aos='fade-in'>Featured Books</h2>
 			</div>
-			<div class="carousel">
-				<div class='book-images'>
-					<div class="left-button">></div>
-					<img class='carousel-img img-featured' data-tab='1' src="./assets/carousel/slider1.jpg" />
-					<img class='carousel-img' data-tab='2' src="./assets/carousel/slider2.jpg" />
-					<img class='carousel-img' data-tab='3' src="./assets/carousel/slider3.jpg" />
-					<img class='carousel-img' data-tab='4' src="./assets/carousel/slider4.jpg" />
-					<img class='carousel-img' data-tab='5' src="./assets/carousel/slider5.jpg" />
-					<img class='carousel-img' data-tab='6' src="./assets/carousel/slider6.jpg" />
-					<img class='carousel-img' data-tab='7' src="./assets/carousel/slider7.jpg" />
-					<div class="right-button">></div>
-				</div>
-				<div class='book-descriptions'>
-					<div class='book-description book-featured' data-tab='1'>
-						<div class='single-book-title'>Book 1</div>
-						<div class='single-book-description'>
-							<p>The first book was writgten by ajfncs,zmdc</p>
+			<div class='featured-books'>
+				<div class='books-row'>
+					<div class='book' data-aos='fade-right'>
+						<div class='book-image'>
+							<img src='./assets/slider1.jpg'>
+						</div>
+						<div class='book-title'>
+							<h3>The Odyssey</h3>
+						</div>
+						<div class='book-description'>
+							<p>The odyssey is a greek peomhat tells of the return of the journey of Odysseusto the island of Ithaca from the war of Troy ...</p>
+							<button>Read More</button>
 						</div>
 					</div>
-					<div class='book-description' data-tab='2'>
-						<div class='single-book-title'>Book 2</div>
-						<div class='single-book-description'>
-							<p>The first book was writgten by ajfncs,zmdc</p>
+					<div class='book'data-aos='fade-up'>
+						<div class='book-image'>
+							<img src='./assets/slider7.jpg'>
+						</div>
+						<div class='book-title'>
+							<h3>Great Expectations</h3>
+						</div>
+						<div class='book-description'>
+							<p>Great Expectations is a bildungsroman that depicts the personal growth and development of an orphan nicknamed Pip...</p>
+							<button>Read More</button>
 						</div>
 					</div>
-					<div class='book-description' data-tab='3'>
-						<div class='single-book-title'>Book 3</div>
-						<div class='single-book-description'>
-							<p>The first book was writgten by ajfncs,zmdc</p>
+					<div class='book'data-aos='fade-up'>
+						<div class='book-image'>
+							<img src='./assets/slider5.jpg'>
+						</div>
+						<div class='book-title'>
+							<h3>Hamlet</h3>
+						</div>
+						<div class='book-description'>
+							<p>Hamlet depicts Prince Hamlet and his revenge against his uncle, Claudius, who has murdered Hamlet's father...</p>
+							<button>Read More</button>
 						</div>
 					</div>
-					<div class='book-description' data-tab='4'>
-						<div class='single-book-title'>Book 4</div>
-						<div class='single-book-description'>
-							<p>The first book was writgten by ajfncs,zmdc</p>
+					<div class='book' data-aos='fade-left'>
+						<div class='book-image'>
+							<img src='./assets/slider4.jpg'>
 						</div>
-					</div>
-					<div class='book-description' data-tab='5'>
-						<div class='single-book-title'>Book 5</div>
-						<div class='single-book-description'>
-							<p>The first book was writgten by ajfncs,zmdc</p>
+						<div class='book-title'>
+							<h3>Ulysses</h3>
 						</div>
-					</div>
-					<div class='book-description' data-tab='6'>
-						<div class='single-book-title'>Book 6</div>
-						<div class='single-book-description'>
-							<p>The first book was writgten by ajfncs,zmdc</p>
-						</div>
-					</div>
-					<div class='book-description' data-tab='7'>
-						<div class='single-book-title'>Book 7</div>
-						<div class='single-book-description'>
-							<p>The first book was writgten by ajfncs,zmdc</p>
+						<div class='book-description'>
+							<p>Ulysses chronicles the peripatetic appointments and encounters of Leopold Bloom in Dublin in the course of an ordinary day...</p>
+							<Button>Read More</Button>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section class='blurb'>
+		<section class='blurb wow fadeInLeft'>
 			<div>
-				<p>"A reader lives a thousand lives before he dies . . . The man who never reads lives only one " <br><span>-
+				<p data-aos='fade-left'>"A reader lives a thousand lives before he dies . . . The man who never reads lives only one " <br><span>-
 						George R.R Martin</span></p>
+						<button>Start Reading</button>
 			</div>
 		</section>
 		<section class='contact'>
-			<h2>Contact Us</h2>
-			<div class='contact-details'>
+			<div class='heading'><h2 data-aos='fade-in' >Get in Touch</h2></div>
+			
+			<div class='contact-details' data-aos='slide-up'>
 				<div class='contact-info'>
 					<h3>Address</h3>
 					<p>IQ Towers, New Jersey, U.S.A</p>
 					<h3>Mobile</h3>
 					<p>+123(0)5556790</p>
+					<h3>Email</h3>
+					<p>info@rr.com</p>
+					<p>request@rr.com</p>
 				</div>
 				<div class='contact-form'>
 					<form>
@@ -140,7 +140,9 @@
 		</footer>
 	</div>
 	<script src="./components/wow.min.js"></script>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 	<script>new WOW().init()</script>
+	<script>new AOS.init()</script>
 </body>
 
 </html>
