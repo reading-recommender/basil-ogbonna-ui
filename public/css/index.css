@@ -183,6 +183,16 @@
 .header .call button:hover {
   cursor: pointer;
 }
+footer {
+  height: 100px;
+  background-color: #76323f;
+  padding-top: 5px;
+}
+footer p {
+  color: gainsboro;
+  font-size: 1rem;
+  text-align: center;
+}
 * {
   box-sizing: border-box;
 }
@@ -199,6 +209,7 @@ body {
   flex-direction: column;
   background-color: #d7cec7;
   font-family: 'Raleway', sans-serif;
+  height: 100%;
 }
 h1,
 h2,
@@ -279,21 +290,32 @@ a {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .contact .contact-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
   width: 70%;
   padding: 0%;
   height: 400px;
+  background-color: #565656;
   border-radius: 0px 0px 50px 0px;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .contact .contact-form::before {
-  background-image: url('../assets/building.jpg');
+  background-image: url('../assets/contact.svg');
   background-size: cover;
   content: "";
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
+  left: 10%;
+  width: 80%;
   height: 100%;
   border-radius: 0px 0px 50px 0px;
   opacity: 0.8;
+}
+.contact .icon {
+  width: 20%;
+  height: 20%;
+  z-index: 5;
+  border-radius: 10%;
 }

@@ -3,6 +3,7 @@
 @import '../components/Books/books';
 @import '../components/Teams/teams';
 @import './header.less';
+@import './footer.less';
 
 * {
     box-sizing:  border-box;
@@ -16,6 +17,7 @@ body{
     .flex(space-between , stretch ,column);
     background-color:@primary-color;
     font-family: 'Raleway', sans-serif;
+    height:100%;
     
 }
 h1,h2,h3{
@@ -88,14 +90,15 @@ a{
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     }
     .contact-form{
+        .flex(center, center, row);
         &::before{
-            background-image: url('../assets/building.jpg');
+            background-image: url('../assets/contact.svg');
             background-size: cover;
             content: "";
             position: absolute;
             top: 0;
-            left: 0;
-            width: 100%;
+            left: 10%;
+            width: 80%;
             height: 100%;
             border-radius:0px 0px 50px 0px;
             opacity: 0.8;
@@ -103,8 +106,14 @@ a{
         width:70%;
         padding:0%;
         height:400px;
+        background-color: @font-color;
         border-radius:0px 0px 50px 0px;
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);  
 }  
-   
+.icon{
+        width:20%;
+        height:20%;
+        z-index:5;
+        border-radius:10%;
+}
 }
