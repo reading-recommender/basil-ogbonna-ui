@@ -1,0 +1,27 @@
+{
+  "name": "r-r",
+  "version": "1.0.0",
+  "description": "A reading recommender ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reading-recommender/basil-ogbonna-ui.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/reading-recommender/basil-ogbonna-ui/issues"
+  },
+  "homepage": "https://github.com/reading-recommender/basil-ogbonna-ui#readme",
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.2"
+  },
+  "dependencies": {
+    "wow.js": "^1.2.2"
+  }
+}
