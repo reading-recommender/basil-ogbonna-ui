@@ -10,23 +10,22 @@
 	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Bitter&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="public/css/animate.css" />
-	<script src="public/components/Teams/teams.js" async></script>
-
+	<script defer src='public/components/Teams/teams.js'></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 </head>
 <body>
 	<div class='home-container'>
 		<header class='header fade-in'>
 			 <div class='topbar wow slideInDown'> 
 				<div class='logo'>
-					<a class='wow fadeInDown' href='index.html'><img src='public/assets/logo.png' alt='' /></a>
 					<h1 class='wow fadeInDown'>Reading <br> Recommender</h1>
 				</div>
 				<nav class='navbar'>
-					<a class='navlink wow fadeInDown' href='index.html'>Home</a>
-					<a class='navlink wow fadeInDown' href='public/about.html'>About</a>
-					<a class='navlink wow fadeInDown' href='' id='signup'>Sign Up</a>
-					<a class='navlink wow fadeInDown' href='' id='login'>Login</a>
-					<a class='navlink wow fadeInDown' href='' id='login'><img id='hamburger' src='public/assets/notebook.svg' alt=''></img></a>
+					<a class='navlink navlink-open wow fadeInDown' href='index.html'>Home</a>
+					<a class='navlink navlink-open wow fadeInDown' href='public/about.html'>About</a>
+					<a class='navlink navlink-open wow fadeInDown' href='' id='signup'>Sign Up</a>
+					<a class='navlink navlink-open wow fadeInDown' href='' id='login'>Login</a>
+					<div><a class='navlink' href='#' id='hamburger'><i class="fas fa-book svg-b"></i></a></div>
 				</nav>
 			</div> 
 			<div class='tag-section'>
@@ -136,10 +135,12 @@
 			</div>
 		</footer> 
 	</div>
-	<script src="public/components/wow.min.js"></script> 
+	
 	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>new AOS.init()</script> 
+	<script src="public/components/wow.min.js"></script> 
 	<script>new WOW().init()</script>
-	<script>new AOS.init()</script>
+
 </body>
 
 </html>

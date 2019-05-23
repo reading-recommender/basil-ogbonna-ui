@@ -142,7 +142,6 @@
   max-width: 100%;
   z-index: 5;
   position: fixed;
-  border-bottom: 1px solid grey;
   display: flex;
   justify-content: space-between;
   align-items: stretch;
@@ -150,6 +149,7 @@
 }
 @media (max-width:500px) {
   .header .topbar {
+    position: relative;
     z-index: 5;
     display: flex;
     justify-content: flex-start;
@@ -200,7 +200,12 @@
 }
 @media (max-width:500px) {
   .header .topbar .navbar {
-    display: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: #d7cec7;
+    z-index: 8;
   }
 }
 .header .topbar .navbar .navlink {
@@ -209,13 +214,40 @@
   text-align: center;
   height: 2em;
 }
+@media (max-width:500px) {
+  .header .topbar .navbar .navlink {
+    display: none;
+    margin-top: 0;
+    height: 4.7em;
+  }
+}
 .header .topbar .navbar .navlink:hover {
-  height: 5em;
-  padding-top: 2em;
   color: #76323f;
+}
+.header .topbar .navbar .navlink-open {
+  display: block;
+}
+.header .topbar #hamburger {
+  display: none;
+}
+@media (max-width:500px) {
+  .header .topbar #hamburger {
+    width: 60px;
+    display: block;
+    font-size: 2.5em;
+    right: 30px;
+    position: absolute;
+    top: 2px;
+    border-bottom: none;
+  }
 }
 .header .topbar #signup {
   border: 1px solid #c09F80;
+}
+@media (max-width:500px) {
+  .header .topbar #signup {
+    border: none;
+  }
 }
 .header .topbar #signup:hover {
   border: none;
@@ -223,6 +255,12 @@
 .header .topbar #login {
   background-color: #c09F80;
   color: gainsboro;
+}
+@media (max-width:500px) {
+  .header .topbar #login {
+    background-color: inherit;
+    color: #c09F80;
+  }
 }
 .header .topbar #login:hover {
   background-color: inherit;
@@ -257,6 +295,7 @@
   justify-content: center;
   align-items: flex-start;
   flex-direction: row;
+  width: 100%;
 }
 .header .call button {
   width: 100%;
@@ -443,4 +482,7 @@ a {
   height: 20%;
   z-index: 5;
   border-radius: 10%;
+}
+.contact section {
+  z-index: 8;
 }
