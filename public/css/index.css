@@ -40,6 +40,7 @@
 @media (max-width:500px) {
   .featured-books .books-row .book {
     width: 100%;
+    margin-bottom: 5%;
   }
 }
 .featured-books .books-row .book img {
@@ -74,6 +75,105 @@
 .heading h2 {
   color: #565656;
 }
+.about-header {
+  background-color: #565656;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-direction: column;
+  height: 50vh;
+}
+.about-header h1,
+.about-header a {
+  color: #c09F80;
+}
+@media (max-width:500px) {
+  .about-header {
+    height: 90vh;
+    margin: 0;
+    padding: 0;
+  }
+}
+.about-section {
+  padding-top: 10%;
+}
+@media (max-width:500px) {
+  .about-section {
+    padding-top: 30%;
+  }
+}
+.about-section h1 {
+  font-size: 1.5rem;
+  text-align: center;
+  color: gainsboro;
+}
+.about-section div {
+  color: #c09F80;
+  width: 80%;
+  margin: 0% 10%;
+}
+.about-section div h3 {
+  font-size: 1.2rem;
+  line-height: 40px;
+}
+@media (max-width:500px) {
+  .about-section div {
+    width: 100%;
+    margin: 0;
+  }
+  .about-section div h3 {
+    font-size: 1rem;
+    line-height: 30px;
+    padding: 0 5%;
+  }
+}
+.team-members {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-left: 10%;
+  width: 80%;
+}
+@media (min-width:800px) {
+  .team-members {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0% 5%;
+  }
+}
+.team-members .teammate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  border-bottom: 2px solid grey;
+  background-color: #c09F80;
+  border-radius: 30px;
+}
+@media (min-width:800px) {
+  .team-members .teammate {
+    width: 50%;
+    border: 2px solid #565656;
+    height: 400px;
+  }
+}
+.team-members .teammate .team-image {
+  width: 200px;
+  height: 200px;
+  padding-top: 3%;
+}
+.team-members .teammate .team-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 40%;
+}
+.team-members .teammate .team-description {
+  padding: 0px 5%;
+}
 .header {
   display: flex;
   justify-content: flex-start;
@@ -85,14 +185,10 @@
 .header a {
   color: #c09F80;
 }
-@media (max-width:500px) {
-  .header {
-    height: 50vh;
-  }
-}
 .header::before {
   background-image: url('../assets/\ background.gif');
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100vw 90vh;
   content: "";
   position: absolute;
   top: 0;
@@ -105,28 +201,27 @@
 @media (max-width:500px) {
   .header::before {
     background-image: url('');
-    background-size: contain;
     width: 100%;
+    height: 100vh;
     background-color: #565656;
     background-repeat: no-repeat;
-    height: 50%;
     z-index: -1;
   }
 }
-.header .topbar {
+.topbar {
   width: 100%;
-  height: 12%;
+  height: 10%;
   max-width: 100%;
   z-index: 5;
   position: fixed;
-  border-bottom: 1px solid grey;
   display: flex;
   justify-content: space-between;
   align-items: stretch;
   flex-direction: row;
 }
 @media (max-width:500px) {
-  .header .topbar {
+  .topbar {
+    position: relative;
     z-index: 5;
     display: flex;
     justify-content: flex-start;
@@ -134,7 +229,7 @@
     flex-direction: column;
   }
 }
-.header .topbar::before {
+.topbar::before {
   content: "";
   display: block;
   position: absolute;
@@ -143,9 +238,9 @@
   min-height: 6em;
   z-index: -1;
   opacity: 0.8;
-  background-color: #565656;
+  background-color: #76323f;
 }
-.header .topbar .logo {
+.topbar .logo {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
@@ -154,58 +249,70 @@
   width: 10%;
 }
 @media (max-width:500px) {
-  .header .topbar .logo {
+  .topbar .logo {
     display: flex;
     justify-content: center;
     align-items: stretch;
     flex-direction: row;
     padding-left: 1rem;
     width: 80%;
+    position: absolute;
     height: 30%;
   }
-  .header .topbar .logo h1 {
+  .topbar .logo h1 {
     padding-top: 2%;
     font-size: 1.7em;
   }
 }
-.header .topbar .navbar {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-direction: row;
-  width: 60%;
-}
-@media (max-width:500px) {
-  .header .topbar .navbar {
-    display: none;
+@media (max-width:500px) and (max-width:500px) {
+  .topbar .logo h1 {
+    font-size: 1.4rem;
   }
 }
-.header .topbar .navbar .navlink {
-  width: 100%;
-  padding-top: 0.5em;
-  text-align: center;
-  height: 2em;
+.topbar #hamburger {
+  display: none;
+  outline: 0;
 }
-.header .topbar .navbar .navlink:hover {
-  height: 5em;
-  padding-top: 2em;
-  color: #76323f;
+.topbar #hamburger:hover {
+  color: #c09F80;
 }
-.header .topbar #signup {
+@media (max-width:500px) {
+  .topbar #hamburger {
+    width: 60px;
+    display: block;
+    font-size: 2.5em;
+    right: 10px;
+    position: absolute;
+    top: 2px;
+    border-bottom: none;
+  }
+}
+.topbar #signup {
   border: 1px solid #c09F80;
 }
-.header .topbar #signup:hover {
+@media (max-width:500px) {
+  .topbar #signup {
+    border: none;
+  }
+}
+.topbar #signup:hover {
   border: none;
 }
-.header .topbar #login {
+.topbar #login {
   background-color: #c09F80;
   color: gainsboro;
 }
-.header .topbar #login:hover {
-  background-color: inherit;
-  color: #76323f;
+@media (max-width:500px) {
+  .topbar #login {
+    background-color: inherit;
+    color: #565656;
+  }
 }
-.header .tagline {
+.topbar #login:hover {
+  background-color: inherit;
+  color: gainsboro;
+}
+.tagline {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -216,26 +323,40 @@
   width: 25%;
 }
 @media (max-width:500px) {
-  .header .tagline {
+  .tagline {
     padding-top: 30%;
     padding-left: 10%;
     width: 90%;
   }
 }
-.header .tagline h1 {
+.tagline h1 {
   color: gainsboro;
   font-size: 1.5em;
 }
-.header .tagline h3 {
+.tagline h3 {
   color: #c09F80;
 }
-.header .call {
+.down {
+  padding-top: 10px;
+  min-width: 100%;
+  min-height: 100%;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 40px;
+  color: #76323f;
+}
+.down #slideDown {
+  background-color: transparent;
+  border: none;
+}
+.call {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-direction: row;
+  width: 100%;
 }
-.header .call button {
+.call button {
   width: 100%;
   height: 50px;
   top: -10%;
@@ -247,8 +368,57 @@
   color: gainsboro;
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
-.header .call button:hover {
+@media (max-width:500px) {
+  .call button {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+}
+.call button:hover {
   cursor: pointer;
+}
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  width: 60%;
+}
+@media (max-width:500px) {
+  .navbar {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: #d7cec7;
+    z-index: 8;
+    opacity: 0.5;
+  }
+}
+.navbar .navlink {
+  width: 100%;
+  padding-top: 0.5em;
+  text-align: center;
+  height: 2em;
+}
+@media (max-width:500px) {
+  .navbar .navlink {
+    display: none;
+    outline: 0;
+    margin-top: 0;
+    height: 4.6em;
+    color: #565656;
+  }
+  .navbar .navlink:last-of-type {
+    color: #c09F80;
+  }
+}
+.navbar .navlink:hover {
+  color: gainsboro;
+}
+.navbar .navlink-open {
+  display: block;
 }
 footer {
   height: 100px;
@@ -315,6 +485,11 @@ a {
 }
 .blurb p {
   font-size: 2.5rem;
+}
+@media (max-width:500px) {
+  .blurb p {
+    font-size: 1.5rem;
+  }
 }
 .blurb button {
   background-color: #c09F80;
@@ -420,4 +595,7 @@ a {
   height: 20%;
   z-index: 5;
   border-radius: 10%;
+}
+.contact section {
+  z-index: 8;
 }

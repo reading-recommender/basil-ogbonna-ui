@@ -11,36 +11,69 @@
 	<link href="https://fonts.googleapis.com/css?family=Bitter&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="./css/animate.css" />
 	<script src="./components/Teams/teams.js" async></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
 </head>
 
 <body>
 	<div class='home-container'>
-		<header class='header fade-in'>
+		<header class='about-header fade-in'>
 			<div class='topbar wow slideInDown'>
 				<div class='logo'>
-					<a class='wow fadeInDown' href='index.html'><img src='./assets/logo.png' alt='' /></a>
 					<h1 class='wow fadeInDown'>Reading <br> Recommender</h1>
 				</div>
-				<nav class='navbar'>
-					<a class='navlink wow fadeInDown' href='index.html'>Home</a>
-					<a class='navlink wow fadeInDown' href='about.html'>About</a>
-					<a class='navlink wow fadeInDown' href='' id='signup'>Sign Up</a>
-					<a class='navlink wow fadeInDown' href='' id='login'>Login</a>
+				<nav class='navbar wow'>
+					<a class='navlink navlink-open wow fadeInDown' href='../index.html'>Home</a>
+					<a class='navlink navlink-open wow fadeInDown' href='about.html'>About</a>
+					<a class='navlink navlink-open wow fadeInDown' href='' id='signup'>Sign Up</a>
+					<a class='navlink navlink-open wow fadeInDown' href='' id='login'>Login</a>
+					<div><a class='navlink' href='#' id='hamburger'><i class="fas fa-book svg-b"></i></a></div>
 				</nav>
 			</div>
+			<div class='about-section'>
+			
+					<div class='wow slideInLeft'>
+						<h1> Who We Are</h1>
+						<div class='team-mission'>
+								<h3>Here at RR we love books! Our group is made up of software developers and data scientists.
+										<br>
+									Our mission is to ease the book selection process of book lovers out there and expand their interest by recommending suitable books amongst the greatest books of all times.
+								</h3>
+								<div class='down' id='div1'>
+										<button id='slideDown'><a href='#teams'><i class='wow flash fas fa-chevron-down down'></i></a></button>
+									</div> 
+						</div>
+					</div>
+			</div>
 		</header>
-		<section class='books'>
-			<div class='heading'>
+		<section class='team'>
+			<div class='heading' id=teams>
 				<h2 data-aos='fade-in'>The Team</h2>
 			</div>
 			<div class='team-members'>
 				<div class='teammate' data-aos='fade-up'>
 					<div class='team-image'>
-						<img src='./assets/slider1.jpg'>
+						<img src='./assets/team/alex.jpeg'>
 					</div>
 					<div class='team-name'>
-						<h3>The Odyssey</h3>
+						<h3>Alex King</h3>
+					</div>
+					<div class='team-description'>
+						<p>Alex Resides in U.S.A, a graduate of Lambda School</p>
+						<p>
+						<span>Favourite Book: </span>
+						</p>
+						<p>
+						<span><i class="fab fa-github"></i></i></span>
+						</p>
+					</div>
+				</div>
+				<div class='teammate' data-aos='fade-up'>
+					<div class='team-image'>
+						<img src='./assets/team/christopher_aronson.png'>
+					</div>
+					<div class='team-name'>
+						<h3>Christopher Aronson</h3>
 					</div>
 					<div class='team-description'>
 						<p>The odyssey is a greek peom that tells of the return of the journey of Odysseusto the island
@@ -49,10 +82,10 @@
 				</div>
 				<div class='teammate' data-aos='fade-up'>
 					<div class='team-image'>
-						<img src='./assets/slider1.jpg'>
+						<img src='./assets/team/James.jpeg'>
 					</div>
 					<div class='team-name'>
-						<h3>The Odyssey</h3>
+						<h3>James Stark</h3>
 					</div>
 					<div class='team-description'>
 						<p>The odyssey is a greek peom that tells of the return of the journey of Odysseusto the island
@@ -61,10 +94,10 @@
 				</div>
 				<div class='teammate' data-aos='fade-up'>
 					<div class='team-image'>
-						<img src='./assets/slider1.jpg'>
+						<img src='./assets/team/darien-payton.png'>
 					</div>
 					<div class='team-name'>
-						<h3>The Odyssey</h3>
+						<h3>Darien Payton</h3>
 					</div>
 					<div class='team-description'>
 						<p>The odyssey is a greek peom that tells of the return of the journey of Odysseusto the island
@@ -73,10 +106,10 @@
 				</div>
 				<div class='teammate' data-aos='fade-up'>
 					<div class='team-image'>
-						<img src='./assets/slider1.jpg'>
+						<img src='./assets/team/jaytee-padilla.jpg'>
 					</div>
 					<div class='team-name'>
-						<h3>The Odyssey</h3>
+						<h3>Jaytee Padilla</h3>
 					</div>
 					<div class='team-description'>
 						<p>The odyssey is a greek peom that tells of the return of the journey of Odysseusto the island
@@ -85,10 +118,10 @@
 				</div>
 				<div class='teammate' data-aos='fade-up'>
 					<div class='team-image'>
-						<img src='./assets/slider1.jpg'>
+						<img src='./assets/team/laura-daugherty.jpg'>
 					</div>
 					<div class='team-name'>
-						<h3>The Odyssey</h3>
+						<h3>Laura Daugherty</h3>
 					</div>
 					<div class='team-description'>
 						<p>The odyssey is a greek peom that tells of the return of the journey of Odysseusto the island
@@ -97,10 +130,10 @@
 				</div>
 				<div class='teammate' data-aos='fade-up'>
 					<div class='team-image'>
-						<img src='./assets/slider1.jpg'>
+						<img src='./assets/team/peter-stone.png'>
 					</div>
 					<div class='team-name'>
-						<h3>The Odyssey</h3>
+						<h3>Peter Stone</h3>
 					</div>
 					<div class='team-description'>
 						<p>The odyssey is a greek peom that tells of the return of the journey of Odysseusto the island
@@ -109,10 +142,10 @@
 				</div>
 				<div class='teammate' data-aos='fade-up'>
 					<div class='team-image'>
-						<img src='./assets/slider1.jpg'>
+						<img src='./assets/team/donald-celaj.png'>
 					</div>
 					<div class='team-name'>
-						<h3>The Odyssey</h3>
+						<h3>Donald Celaj</h3>
 					</div>
 					<div class='team-description'>
 						<p>The odyssey is a greek peom that tells of the return of the journey of Odysseusto the island
@@ -121,10 +154,10 @@
 				</div>
 				<div class='teammate' data-aos='fade-up'>
 					<div class='team-image'>
-						<img src='./assets/slider1.jpg'>
+						<img src='./assets/team/daniel-carter.jpg'>
 					</div>
 					<div class='team-name'>
-						<h3>The Odyssey</h3>
+						<h3>Daniel Carter</h3>
 					</div>
 					<div class='team-description'>
 						<p>The odyssey is a greek peom that tells of the return of the journey of Odysseusto the island
@@ -133,22 +166,10 @@
 				</div>
 				<div class='teammate' data-aos='fade-up'>
 					<div class='team-image'>
-						<img src='./assets/slider1.jpg'>
+						<img src='./assets/team/basil.jpg'>
 					</div>
 					<div class='team-name'>
-						<h3>The Odyssey</h3>
-					</div>
-					<div class='team-description'>
-						<p>The odyssey is a greek peom that tells of the return of the journey of Odysseusto the island
-							of Ithaca from the war of Troy ...</p>
-					</div>
-				</div>
-				<div class='teammate' data-aos='fade-up'>
-					<div class='team-image'>
-						<img src='./assets/slider1.jpg'>
-					</div>
-					<div class='team-name'>
-						<h3>The Odyssey</h3>
+						<h3>Ogbonna Basil</h3>
 					</div>
 					<div class='team-description'>
 						<p>The odyssey is a greek peom that tells of the return of the journey of Odysseusto the island
@@ -157,14 +178,7 @@
 				</div>
 			</div>
 		</section>
-		<section class='blurb wow fadeInLeft'>
-			<div>
-				<p data-aos='fade-right'>"A reader lives a thousand lives before he dies . . . The man who never reads
-					lives only one " <br><span>-
-						George R.R Martin</span></p>
-				<button>Start Reading</button>
-			</div>
-		</section>
+
 		<section class='contact'>
 			<div class='heading'>
 				<h2 data-aos='fade-in'>Get in Touch</h2>
