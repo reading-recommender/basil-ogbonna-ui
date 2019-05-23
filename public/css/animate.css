@@ -110,7 +110,7 @@
 .flash {
   -webkit-animation-name: flash;
   animation-name: flash;
-  animation-iteration-count:infinite;
+  animation-iteration-count:10;
 }
 
 /* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
@@ -1411,7 +1411,7 @@
 .fadeInDown {
   -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown;
-  animation-delay: 3s;
+  animation-delay: 1s;
 }
 
 @-webkit-keyframes fadeInDownBig {
@@ -3372,7 +3372,7 @@
 .slideInLeft {
   -webkit-animation-name: slideInLeft;
   animation-name: slideInLeft;
-  animation-delay:4s;
+  animation-delay:1s;
 }
 
 @-webkit-keyframes slideInRight {

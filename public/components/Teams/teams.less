@@ -1,11 +1,70 @@
+
+.about-header{
+    h1, a{
+        color:@background-color;
+    }
+    background-color:@font-color;
+    .flex(flex-start , stretch ,column);
+    height:50vh;
+    @media @phone{
+        height:90vh;
+        margin:0;
+        padding:0;   
+    }
+}
+.about-section{
+    padding-top:10%;
+   @media @phone  {
+       padding-top:30%;
+    }
+
+    h1{
+        font-size:1.5rem;
+        text-align:center;
+        color:@white;
+    }
+    div{
+        color:@background-color;
+        width:80%;
+        margin:0% 10%;
+        h3{
+            font-size:1.2rem;
+            line-height:40px;
+        }
+        @media @phone{
+            width:100%;
+            margin:0;
+            h3{
+                font-size:1rem;
+                line-height:30px;
+                padding:0 5%
+            }
+        }
+    }
+}
+
 .team-members{
     .flex(space-between, flex-start, column);
+    margin-left:10%;
+    width:80%;
+    @media @desktop {
+        .flex(space-between,center,row); 
+        flex-wrap: wrap;
+        padding:0% 5%;
+    }
     .teammate{
         .flex(space-between,center,column);
-        border-bottom:2px solid @font-color;
+        border-bottom:2px solid grey;
+        background-color:@background-color;
+        border-radius: 30px;
+        @media @desktop {
+            width:50%;
+            border:2px solid @font-color;
+            height:400px;
+        }
         .team-image{
-            width:80%;
-            height:300px;
+            width:200px;
+            height:200px;
             padding-top:3%;
             img{
                 width:100%;
@@ -14,8 +73,9 @@
             }
         }
         .team-description{
-           
+           padding:0px 5%;
         }
+        
         
     }
 }
