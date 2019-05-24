@@ -484,58 +484,6 @@ footer p {
 .heading h2 {
   color: #565656;
 }
-.about-header {
-  background-color: #565656;
-  display: flex;
-  justify-content: flex-start;
-  align-items: stretch;
-  flex-direction: column;
-  height: 50vh;
-}
-.about-header h1,
-.about-header a {
-  color: #c09F80;
-}
-@media (max-width:500px) {
-  .about-header {
-    height: 90vh;
-    margin: 0;
-    padding: 0;
-  }
-}
-.about-section {
-  padding-top: 10%;
-}
-@media (max-width:500px) {
-  .about-section {
-    padding-top: 30%;
-  }
-}
-.about-section h1 {
-  font-size: 1.5rem;
-  text-align: center;
-  color: gainsboro;
-}
-.about-section div {
-  color: #c09F80;
-  width: 80%;
-  margin: 0% 10%;
-}
-.about-section div h3 {
-  font-size: 1.2rem;
-  line-height: 40px;
-}
-@media (max-width:500px) {
-  .about-section div {
-    width: 100%;
-    margin: 0;
-  }
-  .about-section div h3 {
-    font-size: 1rem;
-    line-height: 30px;
-    padding: 0 5%;
-  }
-}
 .team-members {
   display: flex;
   justify-content: space-between;
@@ -560,9 +508,7 @@ footer p {
   align-items: center;
   flex-direction: column;
   border-bottom: 2px solid grey;
-  margin-bottom: 2%;
   background-color: #c09F80;
-  width: 100%;
   border-radius: 30px;
 }
 @media (min-width:800px) {

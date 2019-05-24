@@ -1,0 +1,44 @@
+
+.about-header{
+    h1, a{
+        color:@background-color;
+    }
+    background-color:@font-color;
+    .flex(flex-start , stretch ,column);
+    height:50vh;
+    @media @phone{
+        height:90vh;
+        margin:0;
+        padding:0;   
+    }
+}
+.about-section{
+    padding-top:10%;
+   @media @phone  {
+       padding-top:30%;
+    }
+
+    h1{
+        font-size:1.5rem;
+        text-align:center;
+        color:@white;
+    }
+    div{
+        color:@background-color;
+        width:80%;
+        margin:0% 10%;
+        h3{
+            font-size:1.2rem;
+            line-height:40px;
+        }
+        @media @phone{
+            width:100%;
+            margin:0;
+            h3{
+                font-size:1rem;
+                line-height:30px;
+                padding:0 5%
+            }
+        }
+    }
+}

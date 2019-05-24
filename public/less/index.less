@@ -1,9 +1,12 @@
 @import './mixins';
 @import './variables';
-@import '../components/Books/books';
-@import '../components/Teams/teams';
 @import './header.less';
 @import './footer.less';
+@import './about.less';
+@import './contact.less';
+@import '../components/Books/books';
+@import '../components/Teams/teams';
+@import'../components/Hamburger/hamburger';
 
 * {
     box-sizing:  border-box;
@@ -70,82 +73,4 @@ a{
         }
     }
 }
-.contact{
-    background-color:@primary-color;
-    div{
-        width:100%;
-        height:100%;
-    }
-    h2{
-        text-align:left;
-        padding:1em;
-        text-align:center;
-    }
-    .contact-details{
-        width:60%;
-        margin:0% 20%;
-        .flex(flex-start, stretch , row);
-        @media @phone{
-            .flex(flex-start, center, column);
-            width:80%;
-            margin:0% 10%;
-        }
-    }
-    .contact-info{
-        @media @phone {
-            width:80%;
-            border-radius:10px 10px 0px 0px;
-            height:80%;
-        }
-        padding:3%;
-        padding-left:7%;
-        width:40%;
-        height:400px;
-        background-color:@font-color;
-        border-radius:50px 0px 0px 0px;
-        color:white;
-        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    }
-    .contact-form{
-        .flex(center, center, row);
-        @media @phone {
-          height:1%;
-          width:80%;
-          margin:0;
-          border-radius:0px;
-          background-color:@font-color;
-        }
-        &::before{
-            background-image: url('../assets/contact.svg');
-            @media @phone{
-                background-image:url('/')
-            };
-            background-size: cover;
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 10%;
-            width: 80%;
-            height: 100%;
-            border-radius:0px 0px 50px 0px;
-            opacity: 0.8;
-            }
-        width:70%;
-        padding:0%;
-        height:400px;
-        background-color: @font-color;
-        border-radius:0px 0px 50px 0px;
-        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);  
-}  
-.icon{
-        width:20%;
-        height:20%;
-        z-index:5;
-        border-radius:10%;
-}
-section{
-    z-index:8;
-}
 
-
-}
