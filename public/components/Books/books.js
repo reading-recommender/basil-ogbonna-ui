@@ -1,10 +1,10 @@
 class Books {
-  constructor(book, url) {
+  constructor(book) {
     this.book = book;
-    this.url = url;
-    this.buttonClick();
-    this.read = document.querySelector('button');
-    this.read.addEventListener('click', () => {
+    this.url = 'https://reading-recommender.netlify.com/';
+
+
+    this.book.addEventListener('click', () => {
       this.buttonClick();
     });
   }
@@ -13,5 +13,6 @@ class Books {
     window.location.href = this.url;
   }
 }
-const books = document.querySelectorAll('book');
+
+const books = document.querySelectorAll('button');
 books.forEach(book => new Books(book));
