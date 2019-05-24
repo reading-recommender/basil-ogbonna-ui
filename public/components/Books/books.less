@@ -7,7 +7,7 @@
             .flex(flex-start, center, column);
             width:89%;
             .book-image{
-                width:100%;
+                width:@fullwidth;
             }
         }
         margin-left:2%;
@@ -15,9 +15,9 @@
         width:80%;
         .book{
             .flex(flex-start, center, column);
-            width:25%;
+            width:@quarterwidth;
             @media @phone{
-                width:100%;
+                width:@fullwidth;
                 margin-bottom:5%;
             }
             height:20%;
@@ -25,7 +25,7 @@
             box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
             background-color:white;
             img{
-                width:100%;
+                width:@fullwidth;
                 padding:0%;
                 height:350px;
                
@@ -34,11 +34,11 @@
                 padding:0% 5%;
             }
             button{
-                margin-left:25%;
+                margin-left:@quarterwidth;
                 text-align:center;
                 border-radius:5px 5px 0px 0px;
                 height:30px;
-                width:50%;
+                width:@halfwidth;
                 border:2px solid @background-color;
                 border-bottom:none;
                 &:hover{
