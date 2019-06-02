@@ -3372,7 +3372,6 @@
 .slideInLeft {
   -webkit-animation-name: slideInLeft;
   animation-name: slideInLeft;
-  animation-delay:1s;
 }
 
 @-webkit-keyframes slideInRight {

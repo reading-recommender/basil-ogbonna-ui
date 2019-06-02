@@ -3,7 +3,7 @@
     h1, a{
         color:@background-color;
     }
-    height:100vh;
+    height:75vh;
     &::before{
         background-image: url('../assets/\ background.gif');
         background-repeat:no-repeat;
@@ -16,12 +16,14 @@
         height: 100%;
         z-index: -6;
         opacity: 1;
+        @media @tablet{
+            background-size: 100vw 60vw;
+        }
         @media @phone{
             background-image:url('');
             width: 100%;
-            height:100vh;
+            height:75vh;
             background-color:@font-color;
-            background-repeat: no-repeat;
             z-index:-1;
         }
     }
@@ -71,7 +73,6 @@
    }
     #hamburger{
         display:none;
-        outline:0;
         &:hover{
             color:@background-color;
         }
@@ -83,7 +84,7 @@
         position:absolute;
         top:2px;
         border-bottom:none;
-
+        z-index: 8;
         }
     }
    #signup{
@@ -116,27 +117,61 @@
     height:100%;
     width:25%;
     @media @phone{
-        padding-top:30%;
-        padding-left:10%;
-        width:90%;
+        padding-top:15%;
+        padding-left:5%;
+        width:95%;
     }
+    @media @tablet{
+        width:100%;
+        padding-top:20%;
+        padding-left:5%;
+        padding-right:10%;
+        background-color:@font-color;
+    }
+    .hero{
+        .flex(space-between, flex-start, row );
+        height: 80%;
+    }
+    .slideText{
+        width:50%;
+        padding: 0 2%;
+        margin:0;
+        h3{
+            font-size:1em;
+        }
+    }
+    .headerPicture{
+        width:50%;
+        height:20vh; 
+        background-image: url('../assets/undraw_absorbed_in_xahs\ \(1\).svg');
+        background-size:contain;
+        background-position: left top;
+        background-repeat: no-repeat;
+
+     
+     }
     h1{
         color:@white;
         font-size:1.5em;
+        @media @phone{
+            padding-top:5%;
+            font-size:1.2em;
+        }
     }
     h3{
         color:@background-color;
-    }
-    .down{
+        @media @phone{
+            font-size:1em;
+        }
     }
 }
 .down{
-    padding-top:10px;
     min-width:100%;
-    min-height:100%;
     text-align:center;
-    margin-top:10px;
+    margin-top:5%;
+    margin-left:0;
     font-size:40px;
+    border:none;
     color:@secondary-color;
    #slideDown{
        background-color: transparent;
@@ -144,12 +179,11 @@
    }
 }
 .call{    
-    .flex(center ,flex-start, row);
-    width:100%;
+    width:80%;
+    margin-left:10%;
     button{
         width:100%;
         height:50px;
-        top:-10%;
         border-radius:5px;
         outline:none;
         font-size:1.5rem;
@@ -159,7 +193,7 @@
         box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
         @media @phone{
             font-size:1rem;
-            margin-top:10px;
+            margin-top:1vh;
         }
         &:hover{
             cursor:pointer;
@@ -173,17 +207,18 @@
         width:100%;
          .flex(flex-end, flex-start, column);
          background-color:@primary-color;
-         z-index:8;
+         z-index:2;
          opacity:0.8;
      }
      .navlink{
          width:100%;
-       
          @media @phone{
              display:none; 
-             outline:0; 
+             outline:none; 
              margin-top:0;
-             height:4.6em;
+             height:15vh;
+             background-color: inherit;
+             z-index:2;
              color:@font-color;
              &:last-of-type{
                 color:@background-color;
@@ -195,6 +230,8 @@
          &:hover{
              color:@white;
      
+         }
+         &:active{
          }
      }
      .navlink-open{
