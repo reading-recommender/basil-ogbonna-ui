@@ -9,29 +9,9 @@
 .header a {
   color: #c09F80;
 }
-.header::before {
-  background-image: url('../assets/\ background.gif');
-  background-repeat: no-repeat;
-  background-size: 100vw 90vh;
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -6;
-  opacity: 1;
-}
-@media (max-width:500px) {
-  .header::before {
-    background-image: url('');
-    width: 100%;
-    height: 100vh;
-    background-color: #565656;
-    background-repeat: no-repeat;
-    z-index: -1;
-  }
-}
+
+
+
 .topbar {
   width: 100%;
   height: 10%;
@@ -66,10 +46,12 @@
 }
 .topbar .logo {
   display: flex;
+  background-image: url('../assets/reading\ recommender.png');
   justify-content: space-between;
   align-items: stretch;
   flex-direction: row;
   padding-left: 2em;
+  height: 20%;
   width: 10%;
 }
 @media (max-width:500px) {

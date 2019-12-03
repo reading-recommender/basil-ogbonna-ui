@@ -70,6 +70,7 @@
 }
 .topbar .logo {
   display: flex;
+  background-image: url('../assets/reading\ recommender.png');
   justify-content: space-between;
   align-items: stretch;
   flex-direction: row;
@@ -85,7 +86,7 @@
     padding-left: 1rem;
     width: 80%;
     position: absolute;
-    height: 30%;
+  
   }
   .topbar .logo h1 {
     padding-top: 2%;
